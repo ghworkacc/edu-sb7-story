@@ -1,0 +1,59 @@
+mode: customer-facing
+audience:
+  - Point32Health executive leadership
+  - agent governance and security leaders
+  - technology decision makers
+
+hero:
+  entity: Point32Health
+  desired_outcome: >
+    Enable employees to benefit from AI agents while maintaining
+    governance, security, and operational control.
+
+problem:
+  external: >
+    Agent creation and distribution may be outpacing centralized
+    inventory, ownership, access, sharing, data, and connector controls.
+  internal: >
+    Leadership does not yet have sufficient evidence to determine whether
+    existing controls are adequate or Agent 365 provides material value.
+  stakes: >
+    Controls that lag adoption can increase manual work and make agent
+    innovation harder to trust and scale.
+
+guide:
+  empathy: >
+    Microsoft recognizes that Point32Health requires concrete evidence
+    before making a significant investment.
+  competence_evidence:
+    - Existing and proposed controls can be evaluated together.
+    - Representative scenarios can make improvements and remaining gaps visible.
+    - The evaluation explicitly documents licensing and configuration boundaries.
+
+plan:
+  - Select representative agents and baseline the current operating state.
+  - Configure controls and run agreed governance and security scenarios.
+  - Measure improvement and document remaining manual work and residual risk.
+
+action:
+  next_step: Approve a structured Agent 365 proof of concept.
+  owner: Point32Health decision team
+  due_date: null
+
+failure_avoided: >
+  Avoid unmanaged agent growth and decisions based on assumptions,
+  including unnecessary purchasing or rejecting useful controls prematurely.
+
+success:
+  future_state: >
+    Point32Health can scale proven agent use with clear ownership,
+    controlled participation, actionable protection, and evidence-backed
+    understanding of residual risk.
+  metrics:
+    - Visibility improvement
+    - Control improvement
+    - Investigation improvement
+    - Manual effort reduction
+    - Targets not yet defined
+
+confidentiality: customer-safe
