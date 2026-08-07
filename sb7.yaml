@@ -31,14 +31,18 @@ guide:
     - The evaluation explicitly documents licensing and configuration boundaries.
 
 plan:
-  - Baseline representative agents, existing controls, and manual work.
-  - Test agreed visibility, access, sharing, data, connector, and investigation scenarios.
-  - Compare results and decide where to scale, retain existing controls, or address gaps.
+  - Establish the decision contract, including the accountable owner, decision date, representative scenarios, and scorecard.
+  - Baseline current controls and test Agent 365 against the same agents, scenarios, and evidence requirements.
+  - Compare results and decide whether to scale, retain existing controls, remediate and retest, or declare the evidence inconclusive.
 
 action:
-  next_step: Approve a structured Agent 365 proof of concept.
-  owner: Point32Health decision team
+  next_step: Approve the decision contract and structured Agent 365 proof of concept.
+  owner: To be named by Point32Health before proof approval.
   due_date: null
+  readiness_conditions:
+    - Name one accountable Point32Health decision maker and the required advisers.
+    - Set the proof milestones and final decision date.
+    - Approve representative scenarios, measurement methods, and decision rules.
 
 failure_avoided: >
   Avoid unmanaged agent growth and decisions based on assumptions,
@@ -51,10 +55,24 @@ success:
     and security teams can investigate with more actionable evidence. Point32Health
     can scale proven agent use with an evidence-backed understanding of residual risk.
   metrics:
-    - Change in agent ownership, access, data, and connector visibility from baseline.
-    - Change in enforceability of agreed access and sharing policies from baseline.
-    - Change in investigation effort and evidence available for agreed scenarios.
-    - Manual work and unresolved gaps remaining after the proof.
-    - Acceptance thresholds to be agreed before the proof begins.
+    - Coverage of agent ownership, access, data, and connector visibility.
+    - Pass rate for agreed access and sharing policy scenarios.
+    - Investigation time and required evidence available for agreed scenarios.
+    - Manual steps or analyst effort remaining after the proof.
+    - Severity of unresolved risks and the authority required to accept them.
+    - Licensing and operating cost against an agreed economic hurdle.
+  decision_rule:
+    scale: Safety gates, improvement thresholds, residual-risk acceptance, and the economic hurdle are met.
+    retain: Existing controls meet the agreed need and Agent 365 does not clear the incremental-value threshold.
+    remediate_and_retest: Material value is visible, but a defined control or configuration gap prevents scaling.
+    inconclusive: Test validity, environment, licensing, or evidence quality prevents a reliable comparison.
+
+assumptions:
+  - Numeric acceptance thresholds will be set by Point32Health from operational requirements and the baseline, then frozen before Agent 365 results are reviewed.
+
+gaps:
+  - Named accountable Point32Health decision maker.
+  - Proof milestones and final decision date.
+  - Customer-approved numeric thresholds, safety gates, and economic hurdle.
 
 confidentiality: customer-safe

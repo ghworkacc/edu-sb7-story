@@ -66,11 +66,13 @@ That approach protects Point32Health from two bad outcomes: purchasing based on 
 
 The proof follows three steps: **baseline, test and decide**.
 
-First, we baseline the current state using representative Copilot and Foundry agents. We document what Point32Health can see today, which controls are already effective and where investigation still requires manual work.
+Before those steps begin, we establish the decision contract. Point32Health names one accountable decision maker, sets the final decision date and agrees on the representative scenarios, measurement methods and scorecard.
 
-Second, we run agreed scenarios. We test whether teams gain clearer ownership and data visibility, whether approved users can benefit from agents without receiving unnecessary creation or sharing rights, and whether security teams can investigate risky access, data use and connectors with more actionable evidence.
+First, we baseline the current state using representative Copilot and Foundry agents. We document what Point32Health can see today, which controls are already effective and where investigation still requires manual work. We then freeze the acceptance thresholds before reviewing Agent 365 results.
 
-Third, we compare the results and decide. Point32Health should leave the proof knowing where Agent 365 provides material value, where existing controls are sufficient and where residual risk remains.
+Second, we run the agreed scenarios against the same agents and evidence requirements. We test whether teams gain clearer ownership and data visibility, whether approved users can benefit from agents without receiving unnecessary creation or sharing rights, and whether security teams can investigate risky access, data use and connectors with more actionable evidence.
+
+Third, we compare the results and decide. Point32Health should leave the proof knowing whether to scale, retain existing controls, remediate and retest, or conclude that more evidence is required.
 
 The better operating state is practical: employees can use approved agents within clear boundaries; governance teams can understand ownership, access and connections without opening every agent individually; and security teams can investigate with less fragmented evidence. That is what confident scale looks like. The technology earns its place by producing those improvements, not by appearing in another architecture diagram.
 
@@ -89,13 +91,13 @@ Confidence that innovation can accelerate without creating unmanaged risk.
 
 The purpose is simple: establish that confidence through evidence.
 
-Before the proof begins, we should agree on what meaningful improvement means. We will compare visibility, policy enforcement, investigation effort and remaining manual work against the baseline. We will also document unresolved gaps and licensing dependencies. Those measures give Point32Health a defensible basis for the decision without assuming the outcome.
+Before the proof begins, the decision contract should name the accountable Point32Health leader and the final decision date. Its scorecard should define meaningful improvement in visibility coverage, policy enforcement, investigation effort and remaining manual work. It should also set safety gates for unresolved risk and an economic hurdle that includes licensing and operating effort. Point32Health approves those thresholds before Agent 365 results are reviewed.
 
 Remember, at the center is the question your team raised directly:
 
 > **What do we risk without observing, governing, and securing agents, and what do we gain by having it?**
 
-Our ask is for Point32Health's decision team to approve a structured proof of concept that provides the information required to decide whether Agent 365 is warranted.
+Our ask is for Point32Health to nominate the accountable decision maker, set the decision date and approve the structured proof of concept and its scorecard.
 
 If the POC demonstrates meaningful value, you'll have evidence to scale. If it demonstrates existing controls are sufficient, you'll have evidence to avoid unnecessary investment.
 
