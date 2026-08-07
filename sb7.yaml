@@ -31,9 +31,9 @@ guide:
     - The evaluation explicitly documents licensing and configuration boundaries.
 
 plan:
-  - Select representative agents and baseline the current operating state.
-  - Configure controls and run agreed governance and security scenarios.
-  - Measure improvement and document remaining manual work and residual risk.
+  - Baseline representative agents, existing controls, and manual work.
+  - Test agreed visibility, access, sharing, data, connector, and investigation scenarios.
+  - Compare results and decide where to scale, retain existing controls, or address gaps.
 
 action:
   next_step: Approve a structured Agent 365 proof of concept.
@@ -46,14 +46,15 @@ failure_avoided: >
 
 success:
   future_state: >
-    Point32Health can scale proven agent use with clear ownership,
-    controlled participation, actionable protection, and evidence-backed
-    understanding of residual risk.
+    Employees can use approved agents within clear boundaries, governance teams
+    can understand ownership, access, and connections with less manual review,
+    and security teams can investigate with more actionable evidence. Point32Health
+    can scale proven agent use with an evidence-backed understanding of residual risk.
   metrics:
-    - Visibility improvement
-    - Control improvement
-    - Investigation improvement
-    - Manual effort reduction
-    - Targets not yet defined
+    - Change in agent ownership, access, data, and connector visibility from baseline.
+    - Change in enforceability of agreed access and sharing policies from baseline.
+    - Change in investigation effort and evidence available for agreed scenarios.
+    - Manual work and unresolved gaps remaining after the proof.
+    - Acceptance thresholds to be agreed before the proof begins.
 
 confidentiality: customer-safe

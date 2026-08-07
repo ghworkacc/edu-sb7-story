@@ -21,7 +21,7 @@ At the center of that decision is a question your team raised directly:
 
 > **What do we risk without observing, governing, and securing agents, and what do we gain by having it?**
 
-That is exactly the right question because this is not ultimately a technology decision. It is a business decision. As agent innovate and usage expands, Point32Health must decide whether the capabilities already in place provide are sufficient, or if gaps emerge that introduce risk.
+That is exactly the right question because this is not ultimately a technology decision. It is a business decision. As agents innovate and usage expands, Point32Health must decide whether the capabilities already in place are sufficient or whether gaps introduce risk.
 
 Today, our role is not to persuade you that more technology is needed. Our role is to help guide you to evaluate the evidence and define the future state that success should enable.
 
@@ -36,9 +36,9 @@ The decision before Point32Health is straightforward and our objective is to rep
 
 Point32Health is already operating at meaningful agent scale. During the trial discussions, the registry showed roughly 800 agents. We recognize that inventory does not mean every agent is active, but it does show how quickly creation can spread across an enterprise.
 
-> We want to make sure you know about and govern those 800 agents, so they don't become secret agents. 
+Your team described agents being created and distributed without the central governance team always being involved.
 
-Your team described agents being created and distributed without the central governance team always being involved. You also described monitoring that remains heavily manual, including reviewing agents individually to understand external resources and connections. The access question is equally concrete: how can one group use approved agents without automatically giving every person the same ability to create or redistribute agents?
+You also described monitoring that remains heavily manual, including reviewing agents individually to understand external resources and connections. The access question is equally concrete: how can one group use approved agents without automatically giving every person the same ability to create or redistribute agents?
 
 This matters in payer scenarios involving utilization management, healthcare services, benefits, provider, product and claims data. The issue is not that an incident has already occurred; we are not making that claim. The issue is whether inventory, identity, ownership, access, sharing, data and connector visibility can keep pace as adoption grows. If those controls lag, innovation becomes harder to trust and harder to scale. The problem we are solving is unmanaged proliferation, not agent adoption itself.
 
@@ -51,9 +51,9 @@ This matters in payer scenarios involving utilization management, healthcare ser
 
 Point32Health is right to require concrete evidence before making a significant investment. A portal walkthrough or a list of capabilities is not enough. The useful question is what becomes more visible, more enforceable or faster to investigate compared with the current state.
 
-Microsoft can help Point32Health answer that by bringing together the controls already in use and the capabilities being evaluated. That includes identity and access, agent inventory, sharing and lifecycle governance, data and connector visibility, security detections and the SOC investigation experience.
+Microsoft can help Point32Health answer that by evaluating the controls already in use alongside the capabilities being considered. The test should focus on the questions that matter: what becomes more visible, what becomes more enforceable and what becomes faster to investigate?
 
-We should also be precise about boundaries. Agent 365 does not remove every risk by itself, and value depends on configuration, the agents selected, existing Microsoft investments and the licensing model confirmed for your users. Our role is to help design representative tests, configure the relevant controls, observe the results and document what remains manual or unresolved.
+We should also be precise about boundaries. Agent 365 does not remove every risk by itself, and value depends on configuration, the agents selected, existing Microsoft investments and the licensing model confirmed for your users. Our role is to help Point32Health baseline the current state, test representative scenarios and document the results, including what remains manual or unresolved.
 
 That approach protects Point32Health from two bad outcomes: purchasing based on assumptions, or rejecting useful controls because the proof was distracted by licensing mechanics. The trial should make the difference visible and measurable.
 
@@ -61,17 +61,18 @@ That approach protects Point32Health from two bad outcomes: purchasing based on 
 
 ## Speaker 4: Tianna
 
-**Connect desired outcomes to today's challenges**  
+**Describe the proof and the future operating state**  
 *Target: 1:50*
 
-The desired outcomes at the bottom of the slide translate the technical discussion into practical improvements for Point32Health.
+The proof follows three steps: **baseline, test and decide**.
 
-1. **Complete visibility.** A centralized view of the agent estate addresses blind spots and reduces the manual work of opening agents individually to understand ownership, data and external connections.
-2. **Controlled participation.** Point32Health wants people to benefit from approved agents without automatically giving every user the same ability to create or redistribute agents. Clearer access and sharing boundaries address that all-or-none experience.
-3. **Actionable protection.** The goal is not simply more alerts. Security teams need evidence that supports prevention, detection and investigation across risky access, sharing, data use and connectors. That addresses slow, fragmented or manual investigation.
-4. **Confident scale.** Leaders need a defensible answer about where Agent 365 provides material value, where existing controls are sufficient and where residual risk remains. That resolves the current uncertainty between investment and risk acceptance.
+First, we baseline the current state using representative Copilot and Foundry agents. We document what Point32Health can see today, which controls are already effective and where investigation still requires manual work.
 
-These outcomes also define the proof. We can select representative Copilot and Foundry agents, baseline the current state, run agreed scenarios and measure whether visibility, control and investigation materially improve. The technology earns its place by solving these challenges, not by appearing in another architecture diagram.
+Second, we run agreed scenarios. We test whether teams gain clearer ownership and data visibility, whether approved users can benefit from agents without receiving unnecessary creation or sharing rights, and whether security teams can investigate risky access, data use and connectors with more actionable evidence.
+
+Third, we compare the results and decide. Point32Health should leave the proof knowing where Agent 365 provides material value, where existing controls are sufficient and where residual risk remains.
+
+The better operating state is practical: employees can use approved agents within clear boundaries; governance teams can understand ownership, access and connections without opening every agent individually; and security teams can investigate with less fragmented evidence. That is what confident scale looks like. The technology earns its place by producing those improvements, not by appearing in another architecture diagram.
 
 ---
 
@@ -86,13 +87,15 @@ Confidence that Point32Health knows which agents exist, who owns them, what data
 
 Confidence that innovation can accelerate without creating unmanaged risk.
 
-The purposeis simple: establish that confidence through evidence.
+The purpose is simple: establish that confidence through evidence.
+
+Before the proof begins, we should agree on what meaningful improvement means. We will compare visibility, policy enforcement, investigation effort and remaining manual work against the baseline. We will also document unresolved gaps and licensing dependencies. Those measures give Point32Health a defensible basis for the decision without assuming the outcome.
 
 Remember, at the center is the question your team raised directly:
 
 > **What do we risk without observing, governing, and securing agents, and what do we gain by having it?**
 
-Our ask is to you is to approve a structured proof of concept that gives Point32Health the information required to confidently decide whether Agent 365 is warranted.
+Our ask is for Point32Health's decision team to approve a structured proof of concept that provides the information required to decide whether Agent 365 is warranted.
 
 If the POC demonstrates meaningful value, you'll have evidence to scale. If it demonstrates existing controls are sufficient, you'll have evidence to avoid unnecessary investment.
 
