@@ -18,9 +18,21 @@ Your team described agents being created and distributed without the central gov
 This matters in payer scenarios involving utilization management, healthcare services, benefits, provider, product and claims data. The issue is not that an incident has already occurred; we are not making that claim. The issue is whether inventory, identity, ownership, access, sharing, data and connector visibility can keep pace as adoption grows. If those controls lag, innovation becomes harder to trust and harder to scale. The problem we are solving is unmanaged proliferation, not agent adoption itself.
 
 SPEAKER 3 - Robert | POSITION MICROSOFT AS THE GUIDE | TARGET 1:40
-Point32Health is right to require concrete evidence before making a significant investment. A portal walkthrough or a list of capabilities is not enough. The useful question is what becomes more visible, more enforceable or faster to investigate compared with the current state.
-Microsoft can help Point32Health answer that by bringing together the controls already in use and the capabilities being evaluated. That includes identity and access, agent inventory, sharing and lifecycle governance, data and connector visibility, security detections and the SOC investigation experience.
+
+Point32Health is right to require concrete evidence before making a significant investment. A portal walkthrough or a list of capabilities is not enough. The useful question is:
+
+> What becomes more visible, more enforceable, or faster to investigate as compared to the current state.
+
+Microsoft can help Point32Health answer that by bringing together the controls already in use and the capabilities being evaluated. That includes:
+
+  - identity and access, 
+  - agent inventory, 
+  - sharing and lifecycle governance, 
+  - data and connector visibility, 
+  - security detections and the SOC investigation experience.
+
 We should also be precise about boundaries. Agent 365 does not remove every risk by itself, and value depends on configuration, the agents selected, existing Microsoft investments and the licensing model confirmed for your users. Our role is to help design representative tests, configure the relevant controls, observe the results and document what remains manual or unresolved.
+
 That approach protects Point32Health from two bad outcomes: purchasing based on assumptions, or rejecting useful controls because the proof was distracted by licensing mechanics. The trial should make the difference visible and measurable.
 
 SPEAKER 4 - Tianna | CONNECT DESIRED OUTCOMES TO TODAY'S CHALLENGES | TARGET 1:50
