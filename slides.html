@@ -414,6 +414,74 @@
       font-size: 0.52em;
     }
 
+    .guide-story {
+      display: grid;
+      grid-template-columns: 1fr 0.95fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .guide-panel {
+      padding: 25px 27px;
+      background: var(--white);
+    }
+
+    .guide-panel h3 {
+      margin-bottom: 16px;
+      color: var(--blue);
+    }
+
+    .customer-asks {
+      display: grid;
+      gap: 10px;
+    }
+
+    .customer-ask {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 11px 13px;
+      background: var(--blue-light);
+      font-size: 0.53em;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .customer-ask strong {
+      color: var(--blue);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.3em;
+    }
+
+    .guide-perspectives {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .guide-perspective {
+      min-height: 145px;
+      padding: 18px;
+      border-top: 5px solid var(--gold);
+      background: var(--paper);
+    }
+
+    .guide-perspective:last-child { border-top-color: var(--green); }
+    .guide-perspective h3 { margin-bottom: 9px; color: var(--ink); }
+    .guide-perspective p { margin: 0; color: var(--muted); font-size: 0.49em; }
+
+    .fair-evaluation {
+      margin-top: 13px;
+      padding: 14px 18px;
+      border-left: 6px solid var(--coral);
+      background: var(--white);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.57em;
+      font-weight: 700;
+    }
+
     .outcomes {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -636,23 +704,27 @@
       </section>
 
       <section>
-        <div class="eyebrow">Microsoft as guide</div>
-        <h2>The product is not the proof</h2>
-        <div class="guide-grid">
-          <div class="principle"><strong>Evidence before investment.</strong><p>The same agents. The same scenarios. The same evidence requirements. One scorecard frozen before the result.</p></div>
-          <div>
-            <div class="capabilities">
-              <div class="capability">What becomes visible?</div>
-              <div class="capability">What becomes enforceable?</div>
-              <div class="capability">What becomes faster?</div>
-              <div class="capability">What remains manual?</div>
-              <div class="capability">What risk remains?</div>
-              <div class="capability">What value clears the hurdle?</div>
+        <div class="eyebrow">From ambition to evidence</div>
+        <h2>Becoming a Frontier Firm takes deliberate orchestration</h2>
+        <div class="guide-story">
+          <div class="guide-panel">
+            <h3>Point32Health set the bar</h3>
+            <div class="customer-asks">
+              <div class="customer-ask"><strong>01</strong><span>Concrete evidence before committing</span></div>
+              <div class="customer-ask"><strong>02</strong><span>No disruption to the existing business cadence</span></div>
+              <div class="customer-ask"><strong>03</strong><span>A simple plan of action for moving forward</span></div>
             </div>
-            <div class="boundary">Value depends on configuration, representative agents, existing Microsoft investments, and confirmed licensing. Agent 365 does not remove every risk by itself.</div>
+          </div>
+          <div class="guide-panel">
+            <h3>Microsoft brings two perspectives</h3>
+            <div class="guide-perspectives">
+              <div class="guide-perspective"><h3>Research</h3><p>How leading organizations are adopting AI.</p></div>
+              <div class="guide-perspective"><h3>Platform</h3><p>Technical insight into the problems Point32Health intends to solve.</p></div>
+            </div>
           </div>
         </div>
-        <aside class="notes">Robert | Position Microsoft as the guide. Target: 1:40. Protect against purchasing based on assumptions or rejecting controls because licensing distracted the proof.</aside>
+        <div class="fair-evaluation">Start with the existing environment. Compare the same agents and scenarios. Measure results without presuming the outcome.</div>
+        <aside class="notes">Robert | Position Microsoft as the guide. Target: 1:45. Point32Health wants evidence, continuity, and a simple path forward. Microsoft combines organizational research with direct platform insight to support a fair evaluation and a clear scale, retain, or change decision.</aside>
         <div class="speaker">Robert</div>
       </section>
 
