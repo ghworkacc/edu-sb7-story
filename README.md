@@ -34,7 +34,7 @@ The brief.md gives a brief description of the talk.  This is handy for when you 
 
 ## Publish
 
-Once everything is all together, you should be able to push this to your github repo and reach the essay via, eg... https://thenotary.github.io/name-of-talk
+Once everything is all together, you should be able to push this to your github repo and reach the essay via, eg... https://ghworkacc.github.io/edu-sb7-story
 
 
 ## Screen Recording
