@@ -7,16 +7,18 @@
   <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css" />
   <style>
     :root {
-      --ink: #17212b;
-      --muted: #5d6873;
-      --paper: #f5f3ec;
-      --white: #fffef9;
-      --blue: #146c94;
-      --blue-light: #d9edf4;
-      --green: #2f7d65;
-      --coral: #d5644f;
-      --gold: #d2a642;
-      --line: #d8d6ce;
+      --ink: #151d2a;
+      --muted: #596474;
+      --paper: #f3f6f4;
+      --white: #ffffff;
+      --blue: #006b70;
+      --blue-light: #d9efeb;
+      --green: #147d64;
+      --coral: #f05a47;
+      --gold: #e0ad2f;
+      --line: #d4dbd8;
+      --night: #101c29;
+      --electric: #54d6c3;
     }
 
     * { box-sizing: border-box; }
@@ -38,6 +40,7 @@
         linear-gradient(rgba(20, 108, 148, 0.05) 1px, transparent 1px),
         var(--paper);
       background-size: 42px 42px;
+      overflow: hidden;
     }
 
     .reveal h1,
@@ -103,6 +106,16 @@
       text-transform: uppercase;
     }
 
+    .speaker::before {
+      display: inline-block;
+      width: 22px;
+      height: 2px;
+      margin-right: 9px;
+      background: var(--coral);
+      content: "";
+      vertical-align: middle;
+    }
+
     .rule {
       width: 92px;
       height: 7px;
@@ -116,6 +129,96 @@
       grid-template-columns: 1.25fr 0.75fr;
       align-items: center;
       gap: 55px;
+    }
+
+    .title-slide .title-layout {
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 34px;
+    }
+
+    .title-slide h1 {
+      max-width: 690px;
+      font-size: 1.72em;
+      line-height: 1.03;
+    }
+
+    .title-slide .subtitle {
+      max-width: 650px;
+      font-size: 0.68em !important;
+    }
+
+    .dark-slide {
+      color: var(--white) !important;
+      background:
+        radial-gradient(circle at 78% 42%, rgba(84, 214, 195, 0.16), transparent 25%),
+        linear-gradient(125deg, #101c29 0%, #162c39 100%) !important;
+    }
+
+    .dark-slide h1,
+    .dark-slide h2 { color: var(--white); }
+
+    .dark-slide .eyebrow { color: var(--electric); }
+    .dark-slide .subtitle,
+    .dark-slide .speaker { color: #b9c9ce; }
+
+    .agent-field {
+      position: relative;
+      width: 390px;
+      height: 390px;
+    }
+
+    .agent-field::before,
+    .agent-field::after {
+      position: absolute;
+      border: 1px solid rgba(84, 214, 195, 0.34);
+      border-radius: 50%;
+      content: "";
+      inset: 40px;
+    }
+
+    .agent-field::after { inset: 95px; }
+
+    .agent-dot {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--electric);
+      box-shadow: 0 0 18px rgba(84, 214, 195, 0.75);
+    }
+
+    .agent-dot:nth-child(1) { top: 18%; left: 15%; }
+    .agent-dot:nth-child(2) { top: 8%; left: 54%; }
+    .agent-dot:nth-child(3) { top: 26%; right: 8%; }
+    .agent-dot:nth-child(4) { top: 51%; left: 5%; }
+    .agent-dot:nth-child(5) { top: 62%; right: 12%; }
+    .agent-dot:nth-child(6) { bottom: 8%; left: 29%; }
+    .agent-dot:nth-child(7) { bottom: 4%; right: 25%; }
+    .agent-dot:nth-child(8) { top: 44%; left: 48%; width: 20px; height: 20px; background: var(--coral); box-shadow: 0 0 24px rgba(240, 90, 71, 0.8); }
+
+    .agent-count {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      color: var(--white);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2.8em;
+      font-weight: 700;
+      line-height: 1;
+      transform: translate(-50%, -50%);
+    }
+
+    .agent-label {
+      position: absolute;
+      bottom: 57px;
+      left: 50%;
+      width: 220px;
+      color: #b9c9ce;
+      font-size: 0.43em;
+      line-height: 1.25;
+      text-align: center;
+      transform: translateX(-50%);
     }
 
     .signal {
@@ -166,6 +269,14 @@
       line-height: 1.2;
     }
 
+    .decision-kicker {
+      margin-top: 30px !important;
+      color: var(--blue);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.78em !important;
+      font-weight: 700;
+    }
+
     .two-column {
       display: grid;
       grid-template-columns: 0.82fr 1.18fr;
@@ -206,21 +317,40 @@
       background: var(--white);
     }
 
+    .fact:nth-child(2) { border-top-color: var(--coral); }
+    .fact:nth-child(3) { border-top-color: var(--green); }
+    .fact:nth-child(4) { border-top-color: var(--blue); }
+
     .fact h3 { margin-bottom: 10px; color: var(--blue); }
     .fact p { margin: 0; color: var(--muted); font-size: 0.58em; }
+
+    .tension-slide .two-column { margin-top: 14px; }
+    .tension-slide .metric { min-height: 295px; padding: 27px; }
+    .tension-slide .fact { padding: 18px 20px; }
+    .tension-slide .fact h3 { margin-bottom: 6px; }
+    .tension-slide .fact p { font-size: 0.52em; }
 
     .risk-line {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 12px;
-      margin-top: 34px;
+      margin-top: 22px;
     }
 
     .risk {
-      min-height: 235px;
-      padding: 28px 22px;
+      min-height: 205px;
+      padding: 22px 20px;
       border-top: 7px solid var(--coral);
       background: var(--white);
+    }
+
+    .risk::after {
+      display: block;
+      width: 100%;
+      height: 4px;
+      margin-top: 12px;
+      background: linear-gradient(90deg, var(--coral), transparent);
+      content: "";
     }
 
     .risk .number {
@@ -233,6 +363,11 @@
 
     .risk h3 { margin: 18px 0 10px; color: var(--ink); }
     .risk p { margin: 0; color: var(--muted); font-size: 0.53em; }
+
+    .risk-line + .boundary {
+      margin-top: 12px;
+      padding: 14px 18px;
+    }
 
     .guide-grid {
       display: grid;
@@ -327,6 +462,9 @@
       border-top: 6px solid var(--blue);
     }
 
+    .proof-step:first-child { border-top-color: var(--gold); }
+    .proof-step:last-child { border-top-color: var(--green); }
+
     .proof-step:not(:last-child)::after {
       position: absolute;
       top: 50%;
@@ -345,11 +483,11 @@
       display: grid;
       grid-template-columns: 0.9fr 1.1fr;
       gap: 44px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     .confidence {
-      padding: 34px;
+      padding: 26px;
       background: var(--green);
       color: var(--white);
     }
@@ -358,14 +496,14 @@
     .confidence p { font-size: 0.61em; }
     .confidence p:last-child { margin-bottom: 0; }
 
-    .measure-list { display: grid; gap: 10px; }
+    .measure-list { display: grid; gap: 8px; }
 
     .measure {
       display: grid;
       grid-template-columns: 34px 1fr;
       gap: 14px;
       align-items: center;
-      padding: 15px 18px;
+      padding: 12px 18px;
       background: var(--white);
       font-size: 0.56em;
     }
@@ -392,6 +530,29 @@
       font-weight: 700;
     }
 
+    .closing-path {
+      display: grid;
+      grid-template-columns: auto 32px auto 32px auto;
+      gap: 13px;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .closing-path span {
+      padding: 12px 16px;
+      border: 1px solid rgba(84, 214, 195, 0.55);
+      color: var(--electric);
+      font-size: 0.48em;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .closing-path i {
+      color: var(--coral);
+      font-size: 0.8em;
+      font-style: normal;
+    }
+
     .reveal .progress { color: var(--blue); height: 5px; }
 
     .reveal .slide-number {
@@ -411,19 +572,19 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section>
+      <section class="dark-slide title-slide">
         <div class="title-layout">
           <div>
             <div class="eyebrow">Point32Health | Agent strategy</div>
-            <h1>From Agent Experimentation to Governed Scale</h1>
+            <h1>800 experiments.<br />One governed path forward.</h1>
             <div class="rule"></div>
-            <p class="subtitle">A structured path to evaluate visibility, governance, security, and operational control.</p>
+            <p class="subtitle">Turn agent momentum into an operating model Point32Health can see, defend, and scale.</p>
           </div>
-          <div class="signal" aria-label="Approximately 800 agents in the trial registry">
-            <div>
-              <strong>~800</strong>
-              <span>agents observed in the trial registry</span>
-            </div>
+          <div class="agent-field" aria-label="Approximately 800 agents in the trial registry">
+            <span class="agent-dot"></span><span class="agent-dot"></span><span class="agent-dot"></span><span class="agent-dot"></span>
+            <span class="agent-dot"></span><span class="agent-dot"></span><span class="agent-dot"></span><span class="agent-dot"></span>
+            <strong class="agent-count">~800</strong>
+            <span class="agent-label">registered agents: a signal of momentum, not a claim of active use</span>
           </div>
         </div>
         <aside class="notes">AJ | Open and frame the customer decision. Target: 1:35.</aside>
@@ -432,25 +593,28 @@
 
       <section>
         <div class="question-layout">
-          <h2>Replace assumptions with evidence</h2>
+          <div class="eyebrow">The leadership decision</div>
+          <h2>What must be true before we scale?</h2>
           <blockquote class="decision-question">What do we risk without observing, governing, and securing agents, and what do we gain by having it?</blockquote>
+          <p class="decision-kicker">The choice is not innovation or control. It is assumption or evidence.</p>
         </div>
         <aside class="notes">This is a business decision, not adoption for technology's sake. The goal is a defensible basis for how agent innovation should move forward.</aside>
         <div class="speaker">AJ</div>
       </section>
 
-      <section>
-        <h2>Creation is outpacing centralized control</h2>
+      <section class="tension-slide">
+        <div class="eyebrow">The 801st agent</div>
+        <h2>Value can spread faster than the control picture</h2>
         <div class="two-column">
           <div class="metric">
             <strong>~800</strong>
-            <span>Inventory does not mean every agent is active. It does show how quickly agent creation can spread across an enterprise.</span>
+            <span>Not 800 active agents. Not 800 incidents. A signal that experimentation is becoming an operating model.</span>
           </div>
           <div class="facts">
-            <div class="fact"><h3>Distributed creation</h3><p>Agents can be created and shared without the governance team always being involved.</p></div>
-            <div class="fact"><h3>Manual monitoring</h3><p>Reviewing agents individually makes ownership, resources, and connections slow to understand.</p></div>
-            <div class="fact"><h3>Access ambiguity</h3><p>Using approved agents should not automatically confer creation or redistribution rights.</p></div>
-            <div class="fact"><h3>Sensitive context</h3><p>Payer workflows can involve benefits, provider, product, claims, and healthcare services data.</p></div>
+            <div class="fact"><h3>Who owns it?</h3><p>Creation and sharing may happen without centralized governance involvement.</p></div>
+            <div class="fact"><h3>Who can act?</h3><p>Approved use should not automatically grant creation or redistribution rights.</p></div>
+            <div class="fact"><h3>What can it reach?</h3><p>Data, connectors, and external resources can require agent-by-agent review.</p></div>
+            <div class="fact"><h3>Can we investigate?</h3><p>Security teams need coherent evidence, not another fragmented trail.</p></div>
           </div>
         </div>
         <aside class="notes">Greg | Describe today's reality and the control gap. Target: 1:45. Do not imply that an incident has occurred.</aside>
@@ -458,12 +622,13 @@
       </section>
 
       <section>
-        <h2>Can controls keep pace as adoption grows?</h2>
+        <div class="eyebrow">The control gap</div>
+        <h2>When oversight lags, momentum turns into drag</h2>
         <div class="risk-line">
-          <div class="risk"><div class="number">01</div><h3>Know</h3><p>Inventory, identity, ownership, and actual use.</p></div>
-          <div class="risk"><div class="number">02</div><h3>Control</h3><p>Access, sharing, creation, and redistribution boundaries.</p></div>
-          <div class="risk"><div class="number">03</div><h3>Protect</h3><p>Data access, connectors, external resources, and policy.</p></div>
-          <div class="risk"><div class="number">04</div><h3>Investigate</h3><p>Actionable evidence for security and operations teams.</p></div>
+          <div class="risk"><div class="number">01</div><h3>Reconstruct</h3><p>Governance spends time rebuilding identity and ownership context.</p></div>
+          <div class="risk"><div class="number">02</div><h3>Interpret</h3><p>Access, sharing, creation, and redistribution boundaries stay ambiguous.</p></div>
+          <div class="risk"><div class="number">03</div><h3>Assemble</h3><p>Data, connector, and policy evidence remains scattered.</p></div>
+          <div class="risk"><div class="number">04</div><h3>Hesitate</h3><p>Leaders cannot see the residual risk clearly enough to scale.</p></div>
         </div>
         <p class="boundary"><strong>The problem is unmanaged proliferation, not agent adoption itself.</strong></p>
         <aside class="notes">The risk is the possibility that controls lag. Keep the claim precise: no assertion that an incident has already occurred.</aside>
@@ -471,17 +636,18 @@
       </section>
 
       <section>
-        <h2>Test what becomes visible, enforceable, and faster</h2>
+        <div class="eyebrow">Microsoft as guide</div>
+        <h2>The product is not the proof</h2>
         <div class="guide-grid">
-          <div class="principle"><strong>Evidence before investment.</strong><p>A portal walkthrough or capability list is not proof. Representative tests should compare the future state with Point32Health's current controls.</p></div>
+          <div class="principle"><strong>Evidence before investment.</strong><p>The same agents. The same scenarios. The same evidence requirements. One scorecard frozen before the result.</p></div>
           <div>
             <div class="capabilities">
-              <div class="capability">Identity &amp; access</div>
-              <div class="capability">Agent inventory</div>
-              <div class="capability">Sharing &amp; lifecycle</div>
-              <div class="capability">Data &amp; connectors</div>
-              <div class="capability">Security detections</div>
-              <div class="capability">SOC investigation</div>
+              <div class="capability">What becomes visible?</div>
+              <div class="capability">What becomes enforceable?</div>
+              <div class="capability">What becomes faster?</div>
+              <div class="capability">What remains manual?</div>
+              <div class="capability">What risk remains?</div>
+              <div class="capability">What value clears the hurdle?</div>
             </div>
             <div class="boundary">Value depends on configuration, representative agents, existing Microsoft investments, and confirmed licensing. Agent 365 does not remove every risk by itself.</div>
           </div>
@@ -491,52 +657,54 @@
       </section>
 
       <section>
-        <div class="eyebrow">Desired outcomes</div>
-        <h2>Four improvements that earn the technology its place</h2>
+        <div class="eyebrow">The destination</div>
+        <h2>Move fast inside boundaries everyone can see</h2>
         <div class="outcomes">
-          <div class="outcome"><div class="mark">1</div><div><h3>Complete visibility</h3><p>A centralized view of agents, ownership, data, and external connections.</p></div></div>
-          <div class="outcome"><div class="mark">2</div><div><h3>Controlled participation</h3><p>Use approved agents without granting everyone equivalent creation or sharing rights.</p></div></div>
-          <div class="outcome"><div class="mark">3</div><div><h3>Actionable protection</h3><p>Evidence that supports prevention, detection, and investigation, not simply more alerts.</p></div></div>
-          <div class="outcome"><div class="mark">4</div><div><h3>Confident scale</h3><p>A defensible view of material value, sufficient existing controls, and residual risk.</p></div></div>
+          <div class="outcome"><div class="mark">1</div><div><h3>Employees move</h3><p>People use approved agents without inheriting unnecessary rights.</p></div></div>
+          <div class="outcome"><div class="mark">2</div><div><h3>Governance sees</h3><p>Ownership, access, data, and connections form one coherent picture.</p></div></div>
+          <div class="outcome"><div class="mark">3</div><div><h3>Security acts</h3><p>Investigations begin with actionable evidence instead of reconstruction.</p></div></div>
+          <div class="outcome"><div class="mark">4</div><div><h3>Leadership chooses</h3><p>Material value and residual risk are visible enough to support scale.</p></div></div>
         </div>
         <aside class="notes">Tianna | Connect desired outcomes to today's challenges. Target: 1:50.</aside>
         <div class="speaker">Tianna</div>
       </section>
 
       <section>
-        <h2>The difference is visible and measurable</h2>
+        <div class="eyebrow">The three-move proof</div>
+        <h2>Frame it. Prove it. Choose it.</h2>
         <div class="proof-flow">
-          <div class="proof-step"><h3>Contract</h3><p>Name the owner, set the decision date, and approve the scorecard.</p></div>
-          <div class="proof-step"><h3>Baseline</h3><p>Document current visibility, control, and investigation effort.</p></div>
-          <div class="proof-step"><h3>Test</h3><p>Run the same representative agents, scenarios, and evidence requirements.</p></div>
-          <div class="proof-step"><h3>Decide</h3><p>Scale, retain, remediate and retest, or request more evidence.</p></div>
+          <div class="proof-step"><h3>Frame</h3><p>Name the owner, set the date, and freeze the scorecard.</p></div>
+          <div class="proof-step"><h3>Baseline</h3><p>Measure current visibility, control, effort, and economics.</p></div>
+          <div class="proof-step"><h3>Prove</h3><p>Run the same agents, scenarios, and evidence requirements.</p></div>
+          <div class="proof-step"><h3>Choose</h3><p>Scale, retain, remediate and retest, or call it inconclusive.</p></div>
         </div>
         <aside class="notes">The technology earns its place by solving the stated challenges, not by appearing in another architecture diagram.</aside>
         <div class="speaker">Tianna</div>
       </section>
 
       <section>
-        <h2>A success we can measure</h2>
+        <div class="eyebrow">One scorecard | Four honest outcomes</div>
+        <h2>A proof Point32Health cannot lose</h2>
         <div class="success-layout">
-          <div class="confidence"><h3>Confidence to innovate</h3><p>Accelerate agent adoption without creating unmanaged risk.</p><p>Make a deliberate strategy decision backed by data rather than assumptions.</p></div>
+          <div class="confidence"><h3>Every result creates a next move</h3><p><strong>Scale</strong> when value clears the gates.</p><p><strong>Retain</strong> when current controls are enough.</p><p><strong>Remediate</strong> when a defined gap blocks scale.</p><p><strong>Inconclusive</strong> when the evidence is not yet fair.</p></div>
           <div class="measure-list">
-            <div class="measure"><span class="check">✓</span><span>Visibility coverage against the agreed threshold</span></div>
-            <div class="measure"><span class="check">✓</span><span>Access and sharing policy scenario pass rate</span></div>
-            <div class="measure"><span class="check">✓</span><span>Investigation time and required evidence</span></div>
-            <div class="measure"><span class="check">✓</span><span>Manual steps and analyst effort remaining</span></div>
-            <div class="measure"><span class="check">✓</span><span>Residual risk and the economic hurdle</span></div>
+            <div class="measure"><span class="check">01</span><span>Visibility and policy outcomes</span></div>
+            <div class="measure"><span class="check">02</span><span>Investigation time and evidence quality</span></div>
+            <div class="measure"><span class="check">03</span><span>Manual steps and analyst effort remaining</span></div>
+            <div class="measure"><span class="check">04</span><span>Residual risk and acceptance authority</span></div>
+            <div class="measure"><span class="check">05</span><span>Licensing and operating economics</span></div>
           </div>
         </div>
         <aside class="notes">Azure / AJ | Define success and close. Target: 1:35.</aside>
         <div class="speaker">Azure / AJ</div>
       </section>
 
-      <section>
+      <section class="dark-slide">
         <div class="closing">
           <div class="eyebrow">The ask</div>
           <h2>Name the owner. Set the date. Approve the proof.</h2>
-          <p class="ask">Approve the representative scenarios, scorecard, and decision rules before results are reviewed. Scale where Agent 365 clears the agreed hurdles; retain existing controls where it does not. Either outcome produces a defensible decision.</p>
-          <div class="closing-line">Scale where value is proven.</div>
+          <p class="ask">Eight hundred experiments created the question. One disciplined proof can answer it.</p>
+          <div class="closing-path"><span>Move fast</span><i>→</i><span>See clearly</span><i>→</i><span>Scale what earns trust</span></div>
         </div>
         <aside class="notes">Close on the decision, not the technology purchase. Return to the central question if time allows.</aside>
         <div class="speaker">Azure / AJ</div>

@@ -1,5 +1,16 @@
 # From Agent Experimentation to Governed Scale
 
+## Talk Outline
+
+- **The signal:** roughly 800 registered agents turn experimentation into a leadership decision.
+- **The tension:** creation can move faster than ownership, access, data, connector, and investigation controls.
+- **The reframe:** the choice is not innovation or control; it is assumption or evidence.
+- **The guide:** Microsoft helps compare current controls and Agent 365 without presuming the outcome.
+- **The plan:** frame it, prove it, choose it.
+- **The proof:** one frozen scorecard supports four legitimate decisions.
+- **The future:** employees move faster inside visible, enforceable boundaries.
+- **The action:** name the owner, set the date, approve the proof.
+
 ## Presentation Notes and Resources
 
 - [Slides](slides.html)
@@ -11,101 +22,131 @@
 ## Speaker 1: AJ
 
 **Open and frame the customer decision**  
-*Target: 1:35*
+*Target: 1:40*
 
-Thank you for the opportunity to continue this conversation.
+Eight hundred.
 
-We've heard a consistent objective from Point32Health: enable employees to benefit from AI agents while maintaining the governance, security, and operational control expected. This is not a discussion about adopting new technology for technology's sake. It is about establishing a sustainable model for agent growth that balances innovation with enterprise responsibility.
+That is roughly how many agents appeared in the trial registry. Not 800 active agents. Not 800 incidents. Eight hundred signals that experimentation is no longer a side project.
 
-At the center of that decision is a question your team raised directly:
+It is becoming an operating model.
+
+That is a good problem to have. It means people see possibility. They are finding new ways to work, new ways to serve, and new ways to move. But it also creates a leadership decision: how does Point32Health preserve that momentum while making every approved step visible, governable, and secure?
+
+Your team asked the question that should anchor the answer:
 
 > **What do we risk without observing, governing, and securing agents, and what do we gain by having it?**
 
-That is exactly the right question because this is not ultimately a technology decision. It is a business decision. As agents innovate and usage expands, Point32Health must decide whether the capabilities already in place are sufficient or whether gaps introduce risk.
+That question is larger than Agent 365. It is not, "Should we buy another product?" It is, "What must be true before we scale?"
 
-Today, our role is not to persuade you that more technology is needed. Our role is to help guide you to evaluate the evidence and define the future state that success should enable.
+Today, Microsoft is not here to take the decision away from you. We are here to make the decision easier to defend.
 
-The decision before Point32Health is straightforward and our objective is to replace assumptions with data, guiding your leadership team to a defensible basis to decide how agent innovation and adoption should move forward.
+Over the next few minutes, we will move from one signal, to the control questions beneath it, to a proof that can produce a real answer. The destination is simple: Point32Health can scale where value is proven, hold where it is not, and know why.
+
+Eight hundred experiments. One governed path forward.
 
 ---
 
 ## Speaker 2: Greg
 
 **Describe today's reality and the control gap**  
-*Target: 1:45*
+*Target: 1:50*
 
-Point32Health is already operating at meaningful agent scale. During the trial discussions, the registry showed roughly 800 agents. We recognize that inventory does not mean every agent is active, but it does show how quickly creation can spread across an enterprise.
+Picture the 801st agent.
 
-Your team described agents being created and distributed without the central governance team always being involved.
+Someone creates it to solve a real problem. It works. They share it. Another team connects it to a resource. The value spreads.
 
-You also described monitoring that remains heavily manual, including reviewing agents individually to understand external resources and connections. The access question is equally concrete: how can one group use approved agents without automatically giving every person the same ability to create or redistribute agents?
+Now ask four basic questions. Who owns it? Who can use or change it? What data and connectors can it reach? If something looks wrong, what evidence can an investigator see?
 
-This matters in payer scenarios involving utilization management, healthcare services, benefits, provider, product and claims data. The issue is not that an incident has already occurred; we are not making that claim. The issue is whether inventory, identity, ownership, access, sharing, data and connector visibility can keep pace as adoption grows. If those controls lag, innovation becomes harder to trust and harder to scale. The problem we are solving is unmanaged proliferation, not agent adoption itself.
+Your team described a world where agents may be created and distributed without the central governance team always being involved. Monitoring can mean opening agents one by one to understand external resources and connections. Access creates another hard edge: people should be able to use an approved agent without automatically receiving the same power to create or redistribute one.
+
+In payer workflows, those questions can touch benefits, provider, product, claims, and healthcare services data. We are not claiming an incident has occurred. The risk is quieter: the control picture can become fragmented while adoption keeps moving.
+
+That fragmentation creates drag. Governance teams spend time reconstructing ownership. Security teams assemble evidence from separate places. Leaders hesitate because the residual risk is hard to see. The more successful experimentation becomes, the harder it can feel to scale.
+
+So the problem is not agent adoption. The problem is unmanaged proliferation.
+
+Point32Health does not need less energy. It needs a control model that can move at the same speed.
 
 ---
 
 ## Speaker 3: Robert
 
 **Position Microsoft as the guide**  
-*Target: 1:40*
+*Target: 1:45*
 
-Point32Health is right to require concrete evidence before making a significant investment. A portal walkthrough or a list of capabilities is not enough. The useful question is what becomes more visible, more enforceable or faster to investigate compared with the current state.
+Here is the reframe: Point32Health does not have to choose between innovation and control.
 
-Microsoft can help Point32Health answer that by evaluating the controls already in use alongside the capabilities being considered. The test should focus on the questions that matter: what becomes more visible, what becomes more enforceable and what becomes faster to investigate?
+It has to choose between assumption and evidence.
 
-We should also be precise about boundaries. Agent 365 does not remove every risk by itself, and value depends on configuration, the agents selected, existing Microsoft investments and the licensing model confirmed for your users. Our role is to help Point32Health baseline the current state, test representative scenarios and document the results, including what remains manual or unresolved.
+A feature tour cannot make that choice. A polished portal cannot make it. Even a long capability list cannot make it. The answer has to show up in Point32Health's environment, against Point32Health's scenarios, beside the controls Point32Health already owns.
 
-That approach protects Point32Health from two bad outcomes: purchasing based on assumptions, or rejecting useful controls because the proof was distracted by licensing mechanics. The trial should make the difference visible and measurable.
+That is where Microsoft can guide the work. We help establish a fair comparison. The same agents. The same access and sharing scenarios. The same evidence requirements. The same scorecard.
+
+Then we ask three useful questions.
+
+What becomes visible that is difficult to see today? What becomes enforceable that is inconsistent today? What becomes faster to investigate that is manual today?
+
+We should also be exact about the boundaries. Agent 365 does not remove every risk by itself. Its value depends on configuration, representative agents, existing Microsoft investments, and licensing confirmed for the users in scope. Anything still manual or unresolved belongs in the result, not outside it.
+
+That protects Point32Health from two expensive mistakes: buying on promise, or dismissing useful control because the proof never isolated its value.
+
+The product is not the proof. The proof is the proof.
 
 ---
 
 ## Speaker 4: Tianna
 
 **Describe the proof and the future operating state**  
-*Target: 1:50*
+*Target: 1:55*
 
-The proof follows three steps: **baseline, test and decide**.
+The proof has three moves: **frame it, prove it, choose it**.
 
-Before those steps begin, we establish the decision contract. Point32Health names one accountable decision maker, sets the final decision date and agrees on the representative scenarios, measurement methods and scorecard.
+First, frame it. Point32Health names one accountable decision maker, sets the decision date, approves representative scenarios, and freezes the scorecard before anyone sees the Agent 365 result. That turns a trial into a decision contract.
 
-First, we baseline the current state using representative Copilot and Foundry agents. We document what Point32Health can see today, which controls are already effective and where investigation still requires manual work. We then freeze the acceptance thresholds before reviewing Agent 365 results.
+Second, prove it. We baseline what current controls can see, enforce, and investigate. Then we run Agent 365 against the same agents, scenarios, and evidence requirements. We measure visibility coverage, access and sharing outcomes, investigation effort, remaining manual steps, unresolved risk, and the economic hurdle.
 
-Second, we run the agreed scenarios against the same agents and evidence requirements. We test whether teams gain clearer ownership and data visibility, whether approved users can benefit from agents without receiving unnecessary creation or sharing rights, and whether security teams can investigate risky access, data use and connectors with more actionable evidence.
+Third, choose it. There are four honest outcomes.
 
-Third, we compare the results and decide. Point32Health should leave the proof knowing whether to scale, retain existing controls, remediate and retest, or conclude that more evidence is required.
+Scale if the safety gates, improvement thresholds, residual-risk acceptance, and economic hurdle are met.
 
-The better operating state is practical: employees can use approved agents within clear boundaries; governance teams can understand ownership, access and connections without opening every agent individually; and security teams can investigate with less fragmented evidence. That is what confident scale looks like. The technology earns its place by producing those improvements, not by appearing in another architecture diagram.
+Retain current controls if they already meet the need and Agent 365 does not clear the incremental-value threshold.
+
+Remediate and retest if material value appears but a defined gap blocks scale.
+
+Call it inconclusive if the environment, licensing, or evidence quality prevents a fair comparison.
+
+All four outcomes are useful because all four replace ambiguity with a next move.
+
+And if the proof clears the bar, the future state is practical: employees use approved agents inside clear boundaries; governance teams see ownership, access, data, and connections without opening every agent; security teams investigate from coherent evidence; and leadership scales with its eyes open.
+
+The technology earns its place by changing the operating state, not by appearing in another architecture diagram.
 
 ---
 
 ## Speaker 5: Azure / AJ
 
 **Define success and close**  
-*Target: 1:35*
+*Target: 1:40*
 
-Success is not measured by how many agents are deployed. Success is measured by confidence.
+Return to the 801st agent.
 
-Confidence that Point32Health knows which agents exist, who owns them, what data they can access, how they are being used, and whether they operate within policy.
+In the future state, its creator does not have to choose between speed and responsibility. An employee can use an approved agent without inheriting unnecessary rights. Governance can see who owns it and what it touches. Security can investigate it without starting a scavenger hunt. Leadership can decide whether it belongs at scale.
 
-Confidence that innovation can accelerate without creating unmanaged risk.
+That is success. Not another dashboard. Not the largest possible agent count. A system in which every proven agent has a visible path from experiment to trusted operation.
 
-The purpose is simple: establish that confidence through evidence.
+And the proof is designed so Point32Health cannot lose. If Agent 365 demonstrates material value, you have evidence to scale. If existing controls are sufficient, you have evidence to avoid unnecessary investment. If a gap remains, you know exactly what must change. If the result is inconclusive, you know what evidence is missing.
 
-Before the proof begins, the decision contract should name the accountable Point32Health leader and the final decision date. Its scorecard should define meaningful improvement in visibility coverage, policy enforcement, investigation effort and remaining manual work. It should also set safety gates for unresolved risk and an economic hurdle that includes licensing and operating effort. Point32Health approves those thresholds before Agent 365 results are reviewed.
+The only bad outcome is drift: more experimentation, more manual reconstruction, and no agreed basis for the decision.
 
-Remember, at the center is the question your team raised directly:
+So our ask is deliberately concrete.
 
-> **What do we risk without observing, governing, and securing agents, and what do we gain by having it?**
+Name the accountable owner. Set the decision date. Approve the representative scenarios, the frozen scorecard, and the structured proof.
 
-Our ask is for Point32Health to nominate the accountable decision maker, set the decision date and approve the structured proof of concept and its scorecard.
+Then let the evidence do its job.
 
-If the POC demonstrates meaningful value, you'll have evidence to scale. If it demonstrates existing controls are sufficient, you'll have evidence to avoid unnecessary investment.
+Eight hundred experiments created the question. One disciplined proof can answer it.
 
-Either outcome is success because the objective is not purchasing technology. The objective is making the right decision.
-
-Point32Health should be able to make a deliberate decision about its agent strategy, backed by data rather than assumptions:
-
-> **Scale where value is proven.**
+> **Move fast. See clearly. Scale what earns trust.**
 
 
 

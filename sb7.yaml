@@ -1,42 +1,48 @@
+status: ready
 mode: customer-facing
 audience:
   - Point32Health executive leadership
   - agent governance and security leaders
   - technology decision makers
 
+headline: Turn 800 agent experiments into one governed path forward.
+
 hero:
   entity: Point32Health
   desired_outcome: >
-    Enable employees to benefit from AI agents while maintaining
-    governance, security, and operational control.
+    Give employees room to move faster with AI agents while giving
+    governance and security leaders the visibility and control to scale
+    what works.
 
 problem:
   external: >
-    Agent creation and distribution may be outpacing centralized
+    Agent creation and distribution may be moving faster than centralized
     inventory, ownership, access, sharing, data, and connector controls.
   internal: >
-    Leadership does not yet have sufficient evidence to determine whether
-    existing controls are adequate or Agent 365 provides material value.
+    Leadership must choose a path without yet having comparable evidence
+    that shows whether current controls are enough or Agent 365 adds
+    material value.
   stakes: >
-    Controls that lag adoption can increase manual work and make agent
-    innovation harder to trust and scale.
+    When oversight cannot keep pace, each new agent can add review effort,
+    uncertainty, and friction. Innovation may continue, but confidence to
+    scale it does not.
 
 guide:
   empathy: >
-    Microsoft recognizes that Point32Health requires concrete evidence
-    before making a significant investment.
+    Point32Health should not have to choose between momentum and control,
+    or make a significant investment on the strength of a feature tour.
   competence_evidence:
-    - Existing and proposed controls can be evaluated together.
-    - Representative scenarios can make improvements and remaining gaps visible.
-    - The evaluation explicitly documents licensing and configuration boundaries.
+    - Microsoft can evaluate existing and proposed controls against the same agents and scenarios.
+    - A frozen scorecard can make improvements, tradeoffs, and remaining gaps visible.
+    - The evaluation can explicitly document licensing, configuration, and residual-risk boundaries.
 
 plan:
-  - Establish the decision contract, including the accountable owner, decision date, representative scenarios, and scorecard.
-  - Baseline current controls and test Agent 365 against the same agents, scenarios, and evidence requirements.
-  - Compare results and decide whether to scale, retain existing controls, remediate and retest, or declare the evidence inconclusive.
+  - Frame it: name the accountable owner, set the decision date, and freeze representative scenarios and scorecard thresholds.
+  - Prove it: baseline current controls, then test Agent 365 against the same agents, scenarios, and evidence requirements.
+  - Choose it: scale, retain, remediate and retest, or declare the evidence inconclusive.
 
 action:
-  next_step: Approve the decision contract and structured Agent 365 proof of concept.
+  next_step: Name the owner, set the decision date, and approve the structured proof.
   owner: To be named by Point32Health before proof approval.
   due_date: null
   readiness_conditions:
@@ -45,15 +51,17 @@ action:
     - Approve representative scenarios, measurement methods, and decision rules.
 
 failure_avoided: >
-  Avoid unmanaged agent growth and decisions based on assumptions,
-  including unnecessary purchasing or rejecting useful controls prematurely.
+  Avoid allowing agent growth to outrun oversight or making an expensive
+  decision from assumptions, whether that means buying controls that add
+  too little or rejecting controls that could remove material friction.
 
 success:
   future_state: >
-    Employees can use approved agents within clear boundaries, governance teams
-    can understand ownership, access, and connections with less manual review,
-    and security teams can investigate with more actionable evidence. Point32Health
-    can scale proven agent use with an evidence-backed understanding of residual risk.
+    Employees can use approved agents within clear boundaries. Governance teams
+    can see ownership, access, data, and connections without opening every agent.
+    Security teams can investigate with coherent evidence. Point32Health can move
+    proven agents from experimentation to governed scale while understanding the
+    residual risk it is choosing to carry.
   metrics:
     - Coverage of agent ownership, access, data, and connector visibility.
     - Pass rate for agreed access and sharing policy scenarios.
@@ -69,6 +77,7 @@ success:
 
 assumptions:
   - Numeric acceptance thresholds will be set by Point32Health from operational requirements and the baseline, then frozen before Agent 365 results are reviewed.
+  - Dramatic phrasing and visual metaphors are training embellishments, not additional customer claims.
 
 gaps:
   - Named accountable Point32Health decision maker.
@@ -76,3 +85,86 @@ gaps:
   - Customer-approved numeric thresholds, safety gates, and economic hurdle.
 
 confidentiality: customer-safe
+
+artifact_outline:
+  - "Hero: 800 experiments reveal one leadership decision"
+  - "Problem: creation is moving faster than a coherent control picture"
+  - "Stakes: momentum without oversight creates drag, not scale"
+  - "Guide: evidence before investment"
+  - "Plan: frame it, prove it, choose it"
+  - "Proof: one scorecard and four legitimate decision outcomes"
+  - "Success: employees move faster inside visible boundaries"
+  - "Action: name the owner, set the date, approve the proof"
+
+evidence_map:
+  - id: claim-01
+    claim: The trial registry showed approximately 800 agents.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-02
+    claim: Inventory does not establish that every registered agent is active.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-03
+    claim: Agents may be created and distributed without centralized governance involvement.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-04
+    claim: Current monitoring includes individual manual review of agents and connections.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-05
+    claim: Point32Health wants approved use without automatically granting creation or redistribution rights.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-06
+    claim: Representative payer scenarios can involve benefits, provider, product, claims, and healthcare services data.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-07
+    claim: No security incident is asserted in this story.
+    source: essay.md, Speaker 2 customer talk track
+    confidence: confirmed
+    sensitivity: customer-safe
+  - id: claim-08
+    claim: Agent 365 value depends on configuration, selected agents, existing investments, and confirmed licensing.
+    source: essay.md, Speaker 3 customer talk track
+    confidence: user-provided
+    sensitivity: customer-safe
+  - id: claim-09
+    claim: Current and proposed controls can be compared against the same agents, scenarios, and evidence requirements.
+    source: sb7.yaml, proposed proof design
+    confidence: hypothesis
+    sensitivity: customer-safe
+  - id: claim-10
+    claim: The proof can end in scale, retain, remediate and retest, or inconclusive.
+    source: sb7.yaml, proposed decision rule
+    confidence: hypothesis
+    sensitivity: customer-safe
+  - id: claim-11
+    claim: Numeric thresholds and the economic hurdle remain customer decisions.
+    source: sb7.yaml, assumptions and gaps
+    confidence: confirmed
+    sensitivity: customer-safe
+  - id: claim-12
+    claim: Stronger dramatic language is used as a training device and is not new customer evidence.
+    source: user instruction dated 2026-08-07
+    confidence: confirmed
+    sensitivity: customer-safe
+
+renderer_handoff:
+  artifact_type: reveal.js transformation deck with synchronized markdown talk track
+  purpose: align and decide
+  visual_motif: A field of many agent signals converging into one governed path.
+  format_constraints:
+    - Five speakers with a maximum of two minutes each.
+    - Customer remains the hero; Microsoft remains the guide.
+    - Every slide advances one narrative beat and uses a visual, diagram, or data signal.
+    - Approximate and hypothetical language remains visibly qualified.
+  confidentiality: customer-safe

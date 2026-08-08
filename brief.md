@@ -1,15 +1,15 @@
 Title:  
 
-  From agent experimentation to governed scale
+  800 experiments. One governed path forward.
 
 Summary:
 
-  Learn how Point32Health can evaluate the visibility, governance, security, and operational controls needed to scale AI agents responsibly through a structured, evidence-based proof of concept.
+  See how Point32Health can turn agent momentum into a governed operating model through one fair proof, one frozen scorecard, and one defensible decision.
 
 Description:  
 
-  Point32Health is already operating at meaningful agent scale, with agents being created and distributed faster than manual oversight can comfortably support. As adoption grows, leaders need to know which agents exist, who owns them, what data and connectors they use, how access and sharing are controlled, and whether security teams can investigate risky activity efficiently.
+  Roughly 800 agents appeared in the trial registry. That does not mean 800 active agents or 800 incidents. It signals something more important: agent experimentation is becoming an operating model, and Point32Health needs a governed path from promising experiment to trusted operation.
 
-  This session presents a practical framework for evaluating Microsoft Agent 365 alongside Point32Health's existing identity, governance, data protection, and security investments. Rather than relying on a feature walkthrough, the proposed proof of concept begins with a decision contract that names the accountable owner, sets the decision date, and approves representative scenarios, measurement methods, and acceptance thresholds before results are reviewed.
+  This session follows the 801st agent through the questions that matter. Who owns it? Who can use or change it? What data and connectors can it reach? If something looks wrong, what evidence can an investigator see? Point32Health does not have to choose between innovation and control. It has to choose between assumption and evidence.
 
-  Attendees will see how complete visibility, controlled participation, actionable protection, and confident scale can turn agent governance from an assumption into a defensible business decision. The evidence can support scaling Agent 365, retaining existing controls, remediating and retesting, or requesting more evidence. The goal is the same: scale where value is proven and avoid unnecessary investment where it is not.
+  The proposed Agent 365 proof uses the same agents, scenarios, and evidence requirements to compare current and proposed controls. Point32Health freezes the scorecard before seeing the result, then makes one of four honest decisions: scale, retain current controls, remediate and retest, or declare the evidence inconclusive. Every outcome creates a next move. The goal is not another dashboard or the largest possible agent count. It is the confidence to move fast, see clearly, and scale what earns trust.
