@@ -96,67 +96,9 @@ artifact_outline:
   - "Success: employees move faster inside visible boundaries"
   - "Action: name the owner, set the date, approve the proof"
 
-evidence_map:
-  - id: claim-01
-    claim: The trial registry showed approximately 800 agents.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-02
-    claim: Inventory does not establish that every registered agent is active.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-03
-    claim: Agents may be created and distributed without centralized governance involvement.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-04
-    claim: Current monitoring includes individual manual review of agents and connections.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-05
-    claim: Point32Health wants approved use without automatically granting creation or redistribution rights.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-06
-    claim: Representative payer scenarios can involve benefits, provider, product, claims, and healthcare services data.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-07
-    claim: No security incident is asserted in this story.
-    source: essay.md, Speaker 2 customer talk track
-    confidence: confirmed
-    sensitivity: customer-safe
-  - id: claim-08
-    claim: Agent 365 value depends on configuration, selected agents, existing investments, and confirmed licensing.
-    source: essay.md, Speaker 3 customer talk track
-    confidence: user-provided
-    sensitivity: customer-safe
-  - id: claim-09
-    claim: Current and proposed controls can be compared against the same agents, scenarios, and evidence requirements.
-    source: sb7.yaml, proposed proof design
-    confidence: hypothesis
-    sensitivity: customer-safe
-  - id: claim-10
-    claim: The proof can end in scale, retain, remediate and retest, or inconclusive.
-    source: sb7.yaml, proposed decision rule
-    confidence: hypothesis
-    sensitivity: customer-safe
-  - id: claim-11
-    claim: Numeric thresholds and the economic hurdle remain customer decisions.
-    source: sb7.yaml, assumptions and gaps
-    confidence: confirmed
-    sensitivity: customer-safe
-  - id: claim-12
-    claim: Stronger dramatic language is used as a training device and is not new customer evidence.
-    source: user instruction dated 2026-08-07
-    confidence: confirmed
-    sensitivity: customer-safe
+# the evidence_map will not be used in this project
+# evidence_map:
+  
 
 renderer_handoff:
   artifact_type: reveal.js transformation deck with synchronized markdown talk track

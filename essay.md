@@ -74,23 +74,31 @@ Point32Health does not need less energy. It needs a control model that can move 
 **Position Microsoft as the guide**  
 *Target: 1:45*
 
-Here is the reframe: Point32Health does not have to choose between innovation and control.
+I wanna be clear, 
+that letting agents be deligated work to carry out 
+grounded in your organization's data 
+and actually doing **useful things**
+is still a very new idea.  
 
-It has to choose between assumption and evidence.
+Point32Health recognized that 
+becoming a Frontier Firm doesn't just happen -- 
+it takes thoughtful, deliberate orchestration to turn AI ambition 
+into frontier-level results.
 
-A feature tour cannot make that choice. A polished portal cannot make it. Even a long capability list cannot make it. The answer has to show up in Point32Health's environment, against Point32Health's scenarios, beside the controls Point32Health already owns.
+Point32Health had exactly the right ambition and 
+told us exactly what they wanted:
+- concrete evidence around improving their AI position before committing,
+- no disruption to their existing business cadence, and
+- they wanted a simple plan of action for moving forward
 
-That is where Microsoft can guide the work. We help establish a fair comparison. The same agents. The same access and sharing scenarios. The same evidence requirements. The same scorecard.
+Microsoft is well positioned to support this work 
+because we bring experience from multiple angles. 
+- Our research examines how leading organizations are adopting AI, 
+- while our frontier platform gives us direct technical insight into the problems our client intended to solve.
 
-Then we ask three useful questions.
+We can bring those perspectives together in a fair evaluation: one that starts with Point32Health’s existing environment, compares the same agents and scenarios, and measures results without presuming the outcome.
 
-What becomes visible that is difficult to see today? What becomes enforceable that is inconsistent today? What becomes faster to investigate that is manual today?
-
-We should also be exact about the boundaries. Agent 365 does not remove every risk by itself. Its value depends on configuration, representative agents, existing Microsoft investments, and licensing confirmed for the users in scope. Anything still manual or unresolved belongs in the result, not outside it.
-
-That protects Point32Health from two expensive mistakes: buying on promise, or dismissing useful control because the proof never isolated its value.
-
-The product is not the proof. The proof is the proof.
+That gives Point32Health evidence it can use to decide what should scale, what should remain in place, and what may still need to change.
 
 ---
 
