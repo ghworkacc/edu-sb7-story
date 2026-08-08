@@ -18,7 +18,11 @@
       --gold: #e0ad2f;
       --line: #d4dbd8;
       --night: #101c29;
+      --night-raised: #162c39;
+      --on-dark-muted: #b9c9ce;
       --electric: #54d6c3;
+      --font-display: Georgia, "Times New Roman", serif;
+      --font-body: "Aptos", "Segoe UI", sans-serif;
     }
 
     * { box-sizing: border-box; }
@@ -26,7 +30,7 @@
 
     .reveal {
       color: var(--ink);
-      font-family: "Aptos", "Segoe UI", sans-serif;
+      font-family: var(--font-body);
       font-size: 34px;
     }
 
@@ -36,8 +40,8 @@
       height: 100%;
       padding: 58px 68px;
       background:
-        linear-gradient(90deg, rgba(20, 108, 148, 0.05) 1px, transparent 1px),
-        linear-gradient(rgba(20, 108, 148, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--blue) 5%, transparent) 1px, transparent 1px),
+        linear-gradient(color-mix(in srgb, var(--blue) 5%, transparent) 1px, transparent 1px),
         var(--paper);
       background-size: 42px 42px;
       overflow: hidden;
@@ -51,7 +55,7 @@
     .reveal h1,
     .reveal h2 {
       color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-weight: 600;
       letter-spacing: 0;
       text-transform: none;
@@ -150,8 +154,8 @@
     .dark-slide {
       color: var(--white) !important;
       background:
-        radial-gradient(circle at 78% 42%, rgba(84, 214, 195, 0.16), transparent 25%),
-        linear-gradient(125deg, #101c29 0%, #162c39 100%) !important;
+        radial-gradient(circle at 78% 42%, color-mix(in srgb, var(--electric) 16%, transparent), transparent 25%),
+        linear-gradient(125deg, var(--night) 0%, var(--night-raised) 100%) !important;
     }
 
     .dark-slide h1,
@@ -159,7 +163,7 @@
 
     .dark-slide .eyebrow { color: var(--electric); }
     .dark-slide .subtitle,
-    .dark-slide .speaker { color: #b9c9ce; }
+    .dark-slide .speaker { color: var(--on-dark-muted); }
 
     .agent-field {
       position: relative;
@@ -170,7 +174,7 @@
     .agent-field::before,
     .agent-field::after {
       position: absolute;
-      border: 1px solid rgba(84, 214, 195, 0.34);
+      border: 1px solid color-mix(in srgb, var(--electric) 34%, transparent);
       border-radius: 50%;
       content: "";
       inset: 40px;
@@ -184,7 +188,7 @@
       height: 12px;
       border-radius: 50%;
       background: var(--electric);
-      box-shadow: 0 0 18px rgba(84, 214, 195, 0.75);
+      box-shadow: 0 0 18px color-mix(in srgb, var(--electric) 75%, transparent);
     }
 
     .agent-dot:nth-child(1) { top: 18%; left: 15%; }
@@ -194,7 +198,7 @@
     .agent-dot:nth-child(5) { top: 62%; right: 12%; }
     .agent-dot:nth-child(6) { bottom: 8%; left: 29%; }
     .agent-dot:nth-child(7) { bottom: 4%; right: 25%; }
-    .agent-dot:nth-child(8) { top: 44%; left: 48%; width: 20px; height: 20px; background: var(--coral); box-shadow: 0 0 24px rgba(240, 90, 71, 0.8); }
+    .agent-dot:nth-child(8) { top: 44%; left: 48%; width: 20px; height: 20px; background: var(--coral); box-shadow: 0 0 24px color-mix(in srgb, var(--coral) 80%, transparent); }
 
     .agent-count {
       position: absolute;
@@ -202,7 +206,7 @@
       left: 50%;
       z-index: 2;
       color: var(--white);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 2.8em;
       font-weight: 700;
       line-height: 1;
@@ -214,7 +218,7 @@
       bottom: 57px;
       left: 50%;
       width: 220px;
-      color: #b9c9ce;
+      color: var(--on-dark-muted);
       font-size: 0.43em;
       line-height: 1.25;
       text-align: center;
@@ -234,7 +238,7 @@
 
     .signal strong {
       color: var(--blue);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 3.2em;
       line-height: 1;
     }
@@ -263,7 +267,7 @@
       background: var(--white);
       box-shadow: 12px 12px 0 var(--blue-light);
       color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 1.25em;
       font-style: normal;
       line-height: 1.2;
@@ -272,7 +276,7 @@
     .decision-kicker {
       margin-top: 30px !important;
       color: var(--blue);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 0.78em !important;
       font-weight: 700;
     }
@@ -293,7 +297,7 @@
 
     .metric strong {
       display: block;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 3.1em;
       line-height: 1;
     }
@@ -355,7 +359,7 @@
 
     .risk .number {
       color: var(--line);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 1.8em;
       font-weight: 700;
       line-height: 1;
@@ -386,7 +390,7 @@
       display: block;
       margin-bottom: 12px;
       color: var(--blue);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 1.2em;
     }
 
@@ -450,7 +454,7 @@
 
     .customer-ask strong {
       color: var(--blue);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 1.3em;
     }
 
@@ -477,7 +481,7 @@
       border-left: 6px solid var(--coral);
       background: var(--white);
       color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 0.57em;
       font-weight: 700;
     }
@@ -508,7 +512,7 @@
       border-radius: 50%;
       background: var(--green);
       color: var(--white);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 1em;
       font-weight: 700;
     }
@@ -593,7 +597,7 @@
       border-left: 8px solid var(--coral);
       background: var(--white);
       color: var(--blue);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: var(--font-display);
       font-size: 1.03em;
       font-weight: 700;
     }
@@ -608,7 +612,7 @@
 
     .closing-path span {
       padding: 12px 16px;
-      border: 1px solid rgba(84, 214, 195, 0.55);
+      border: 1px solid color-mix(in srgb, var(--electric) 55%, transparent);
       color: var(--electric);
       font-size: 0.48em;
       font-weight: 800;
